@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Навчальні новини</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body id="top">
+  <header class="site-header">
+    <h1>Навчальні новини</h1>
+    <p>Картки новин і накладені плитки для вправи з CSS.</p>
+    <nav class="site-nav" aria-label="Навігація за новинами">
+      <a href="#news-1">Практикум</a>
+      <a href="#news-2">Порада</a>
+      <a href="#news-3">Експеримент</a>
+    </nav>
+  </header>
+
+  <main class="page">
+    <article class="card featured" id="news-1">
+      <span class="badge">Вибір редакції</span>
+      <p class="category">Практикум</p>
+      <h2>Знайомство з DevTools</h2>
+      <p>Навчальна зустріч про структуру сторінки й підсумкові значення CSS.</p>
+      <a href="#news-1">До цієї новини</a>
+    </article>
+
+    <article class="card" id="news-2">
+      <p class="category">Порада</p>
+      <h2>Як перевірити відступи картки</h2>
+      <p>Порівняйте content, padding, border і margin у панелі розробника.</p>
+      <a href="#news-2">До цієї поради</a>
+    </article>
+
+    <article class="card" id="news-3">
+      <p class="category">Експеримент</p>
+      <h2 class="long-title">НадзвичайноДовгийЗаголовокБезПробілівДляПеревіркиПеренесення</h2>
+      <p>Довгий рядок повинен переноситися й не розширювати сторінку.</p>
+      <a href="#news-3">До цього експерименту</a>
+    </article>
+
+    <section class="overlap-demo" aria-labelledby="overlap-title">
+      <h2 id="overlap-title">Три навчальні теми</h2>
+      <p>Розташуйте плитки з частковим накладанням. Усі написи мають залишатися видимими.</p>
+      <div class="tile-stack">
+        <div class="tile tile-one">1. HTML</div>
+        <div class="tile tile-two">2. CSS</div>
+        <div class="tile tile-three">3. DevTools</div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a href="#top">До початку сторінки</a>
+  </footer>
+</body>
+</html>

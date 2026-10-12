@@ -1,0 +1,149 @@
+/*
+  Додайте стилі лабораторної роботи.
+  Номер варіанта й вибрані значення запишіть у коментарі нижче.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body{
+  margin: 0 auto;
+  max-width: 760px;
+
+  font-style: Times New Roman;
+
+  line-height: 1.5;
+
+  color: #212529;
+
+  background-color: #5a5a5c;
+}
+.page {
+  width: 100%;
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.card {
+  position: relative;
+  overflow-wrap: anywhere;
+  display: block;
+  width: 100%;
+
+  margin-bottom: 1.5rem;
+
+  background-color: #086272;
+  padding: 1.5rem;
+  border: 1px solid #2e2e30;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgb(0, 0, 0);
+}
+.card:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+}
+.site-nav {
+  display: inline-block;
+  padding: 1rem;
+}
+.site-nav a:focus-visible, .site-nav a:hover{
+  color: #212529;
+  background-color: #086272;
+  outline: 3px solid #2e2e30;
+  outline-offset: 3px;
+}
+.card > .category {
+  display: inline-block;
+  color: #141516;
+  background-color: #067285;
+  border-radius: 20px;
+  margin-bottom: 0.75rem;
+  font-weight: 600;
+  position: relative;
+  z-index: 2;
+}
+.card:nth-child(2) {
+  border-left: 10px solid #000000;
+}
+.card h2 + p {
+  font-size: 1.05rem;
+  color: #1e3636;
+  font-weight: 500;
+  margin-top: 0.5rem;
+}
+.badge{
+  position: absolute;
+  z-index: 2;
+  top: -12px;
+  left: 16px;
+  background-color: #074b57;
+  border-radius: 14px;
+  font-weight: 600;
+}
+.card.featured {
+  padding: 24px;
+  border-radius: 12px;
+  background-color: #047857;
+}
+.card.featured::before {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-color: #041d16;
+  top: 1.25rem;
+  left: 1rem;
+}
+.tile-stack{
+  position: relative;
+  width: 100%;
+  max-width: 320px;
+  min-height: 192px;
+}
+
+.tile {
+  position: absolute;
+  width: 42%;
+  height: 88px;
+  padding: 8px;
+  text-align: right;
+
+  padding: 1rem;
+  border-radius: 12px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  font-weight: 600;
+}
+
+.tile-one {
+  left: 0;
+  top: 0;
+  z-index: 1;
+  background-color: #060478;
+}
+
+.tile-two {
+  left: 29%;
+  top: 52px;
+  z-index: 3;
+  background-color: #047857;
+}
+
+.tile-three {
+  left: 58%;
+  top: 104px;
+  z-index: 2;
+  background-color: #fbff00;
+}
+.site-footer {
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+  padding: 16px;
+  background-color: #086272;
+  border-radius: 12px;
+  font-size: 0.875rem;
+  color: #212529;
+}
